@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Mio Sito</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #666;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    /* Galleria immagini */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    /* Form contatti */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Benvenuto nel mio sito</h1>
+    <p>Un esempio semplice di pagina web con galleria e contatti</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#galleria">Galleria</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>Questa è la sezione iniziale del sito.</p>
+  </section>
+
+  <section id="chi-siamo">
+    <h2>Chi siamo</h2>
+    <p>Qui puoi inserire una descrizione della tua attività o di te stesso.</p>
+  </section>
+
+  <section id="servizi">
+    <h2>Servizi</h2>
+    <p>Elenca i servizi che offri ai tuoi visitatori o clienti.</p>
+  </section>
+
+  <section id="galleria">
+    <h2>Galleria</h2>
+    <p>Ecco alcune immagini di esempio:</p>
+    <div class="gallery">
+      <img src="https://picsum.photos/400/300?random=1" alt="Foto 1">
+      <img src="https://picsum.photos/400/300?random=2" alt="Foto 2">
+      <img src="https://picsum.photos/400/300?random=3" alt="Foto 3">
+      <img src="https://picsum.photos/400/300?random=4" alt="Foto 4">
+    </div>
+  </section>
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Compila il form per inviarci un messaggio:</p>
+    <form action="mailto:tuoindirizzo@email.com" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Il tuo nome" required>
+      <input type="email" name="email" placeholder="La tua email" required>
+      <textarea name="messaggio" rows="5" placeholder="Il tuo messaggio..." required></textarea>
+      <button type="submit">Invia</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Il Mio Sito</p>
+  </footer>
+</body>
+</html>
